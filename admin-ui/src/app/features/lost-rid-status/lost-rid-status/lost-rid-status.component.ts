@@ -238,17 +238,16 @@ export class LostRidStatusComponent implements OnInit {
   getlostridDetails() {
     let filter = [];
     let fullName = "";
-    let fullNameCount = 0;
+    let columnValue = "";
+    let names: string[] = ['firstName', 'middleName', 'lastName'];
     for (let value of this.filterColumns) {
       if (this.fieldNameList[value.filtername]) {
         if (value.dropdown !== 'true' && value.datePicker !== 'true') {
-          if (value.filtername.equals("firstName") || value.filtername.equals ("lastName")) {
+          if (names.includes(value.filtername)) {
             fullName += this.fieldNameList[value.filtername] + " ";
-            fullNameCount++;
-            if (fullNameCount == 2) {
-              filter.push({ "columnName": value.fieldName, "type": "contains", "value": fullName.trim() });
-            }
-          } else {
+            columnValue = value.fieldName;
+          }
+          else {
             filter.push({ "columnName": value.fieldName, "type": "contains", "value": this.fieldNameList[value.filtername] });
           }
         } else if (value.datePicker === 'true' && value.filterType === 'between') {
@@ -260,6 +259,7 @@ export class LostRidStatusComponent implements OnInit {
         }
       }
     }
+    filter.push({ "columnName": columnValue, "type": "contains", "value": fullName.trim() });
     this.datas = [];
     this.noData = false;
     this.filtersApplied = false;
