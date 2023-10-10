@@ -239,15 +239,15 @@ export class LostRidStatusComponent implements OnInit {
   getlostridDetails() {
     let filter = [];
     let fullName = "";
-    let columnValue = "";
     for (let value of this.filterColumns) {
       if (this.fieldNameList[value.filtername]) {
         if (value.dropdown !== 'true' && value.datePicker !== 'true') {
           if (this.names.includes(value.filtername)) {
             fullName += this.fieldNameList[value.filtername] + " ";
-            columnValue = value.fieldName;
-          }
-          else {
+            if (filter.length > 1)
+              filter.splice(1, 1);
+            filter.push({ "columnName": value.fieldName, "type": "contains", "value": fullName.trim() });
+          } else {
             filter.push({ "columnName": value.fieldName, "type": "contains", "value": this.fieldNameList[value.filtername] });
           }
         } else if (value.datePicker === 'true' && value.filterType === 'between') {
@@ -259,7 +259,6 @@ export class LostRidStatusComponent implements OnInit {
         }
       }
     }
-    filter.push({ "columnName": columnValue, "type": "contains", "value": fullName.trim() });
     this.datas = [];
     this.noData = false;
     this.filtersApplied = false;
@@ -308,6 +307,7 @@ export class LostRidStatusComponent implements OnInit {
       this.noData = true;
   }
   showErrorPopup(message: string) {
+
     this.dialog
       .open(DialogComponent, {
         width: '650px',
