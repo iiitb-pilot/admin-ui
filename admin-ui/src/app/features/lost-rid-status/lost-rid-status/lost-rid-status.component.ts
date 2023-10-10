@@ -44,7 +44,7 @@ export class LostRidStatusComponent implements OnInit {
   filterOptions: any = {};
   fieldNameList: any = {};
   showTable = false;
-
+  names = [];
   initialLocationCode: "";
   locationFieldNameList: string[] = [];
   dynamicDropDown = {};
@@ -96,6 +96,7 @@ export class LostRidStatusComponent implements OnInit {
       .subscribe(response => {
         this.displayedColumns = response.columnsToDisplay;
         this.filterColumns = response.filterColumns;
+        this.names = response.names;
         this.actionButtons = response.actionButtons.filter(
           value => value.showIn.toLowerCase() === 'ellipsis'
         );
@@ -239,11 +240,10 @@ export class LostRidStatusComponent implements OnInit {
     let filter = [];
     let fullName = "";
     let columnValue = "";
-    let names: string[] = ['firstName', 'middleName', 'lastName'];
     for (let value of this.filterColumns) {
       if (this.fieldNameList[value.filtername]) {
         if (value.dropdown !== 'true' && value.datePicker !== 'true') {
-          if (names.includes(value.filtername)) {
+          if (this.names.includes(value.filtername)) {
             fullName += this.fieldNameList[value.filtername] + " ";
             columnValue = value.fieldName;
           }
