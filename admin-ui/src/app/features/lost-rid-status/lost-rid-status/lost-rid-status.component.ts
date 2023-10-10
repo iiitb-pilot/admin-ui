@@ -44,7 +44,7 @@ export class LostRidStatusComponent implements OnInit {
   filterOptions: any = {};
   fieldNameList: any = {};
   showTable = false;
-
+  names = [];
   initialLocationCode: "";
   locationFieldNameList: string[] = [];
   dynamicDropDown = {};
@@ -96,6 +96,7 @@ export class LostRidStatusComponent implements OnInit {
       .subscribe(response => {
         this.displayedColumns = response.columnsToDisplay;
         this.filterColumns = response.filterColumns;
+        this.names = response.names;
         this.actionButtons = response.actionButtons.filter(
           value => value.showIn.toLowerCase() === 'ellipsis'
         );
@@ -238,17 +239,15 @@ export class LostRidStatusComponent implements OnInit {
   getlostridDetails() {
     let filter = [];
     let fullName = "";
-    let fullNameCount = 0;
+    let columnValue = "";
     for (let value of this.filterColumns) {
       if (this.fieldNameList[value.filtername]) {
         if (value.dropdown !== 'true' && value.datePicker !== 'true') {
-          if (value.filtername.equals("firstName") || value.filtername.equals ("lastName")) {
+          if (this.names.includes(value.filtername)) {
             fullName += this.fieldNameList[value.filtername] + " ";
-            fullNameCount++;
-            if (fullNameCount == 2) {
-              filter.push({ "columnName": value.fieldName, "type": "contains", "value": fullName.trim() });
-            }
-          } else {
+            columnValue = value.fieldName;
+          }
+          else {
             filter.push({ "columnName": value.fieldName, "type": "contains", "value": this.fieldNameList[value.filtername] });
           }
         } else if (value.datePicker === 'true' && value.filterType === 'between') {
@@ -260,6 +259,7 @@ export class LostRidStatusComponent implements OnInit {
         }
       }
     }
+    filter.push({ "columnName": columnValue, "type": "contains", "value": fullName.trim() });
     this.datas = [];
     this.noData = false;
     this.filtersApplied = false;
