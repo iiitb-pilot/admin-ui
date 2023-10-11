@@ -7,18 +7,6 @@
     <div class="example-container">
       <span><h3 class="header">{{'lostRID.subtitleenrollment' | translate}}</h3></span>
       <div *ngFor="let field of filterColumns; let i = index" style="display:inline-flex;">
-        <mat-form-field *ngIf="field.dropdown === 'false' && field.datePicker!== 'true'" style="padding: 10px;width: 255px;">
-          <input
-            #{{field.filtername}}
-            id="{{field.filtername}}"
-            (blur)="captureValue($event, field.filtername)"
-            matInput
-            placeholder="{{field.filterlabel[primaryLang] | translate}}"
-            required={{field.ismandatory}}
-            [value]="fieldNameList[field.filtername]"
-          />
-        </mat-form-field>
-
         <mat-form-field *ngIf="field.dropdown !== 'true' && field.datePicker === 'true'" style="padding: 10px;width: 255px;">
           <input
             matInput
@@ -31,7 +19,19 @@
           />
           <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>        
+        </mat-form-field> </div><br>
+        <div *ngFor="let field of filterColumns; let i = index" style="display:inline-flex;">
+        <mat-form-field *ngIf="field.dropdown === 'false' && field.datePicker!== 'true'" style="padding: 10px;width: 255px;">
+          <input
+            #{{field.filtername}}
+            id="{{field.filtername}}"
+            (blur)="captureValue($event, field.filtername)"
+            matInput
+            placeholder="{{field.filterlabel[primaryLang] | translate}}"
+            required={{field.ismandatory}}
+            [value]="fieldNameList[field.filtername]"
+          />
+        </mat-form-field> 
       </div>
       <span><h3 class="header">{{'lostRID.subtitlelocation' | translate}}</h3></span>
       <div *ngFor="let field of filterColumns; let i = index" style="display:inline-flex;">
