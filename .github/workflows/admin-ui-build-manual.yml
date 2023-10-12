@@ -1,4 +1,4 @@
-name: Pre-registration UI build
+name: Admin UI build
 
 on: workflow_dispatch
 
