@@ -29,11 +29,6 @@
       "name": "Kannada",
       "nativeName": "ಕನ್ನಡ",
       "locale": "kn_IN"
-    },
-    "spa": {
-      "name": "Spanish",
-      "nativeName": "Española",
-      "locale": "es_ES"
     }
   },
   "keyboardMapping" :{
@@ -42,14 +37,12 @@
     "ara": "ar",
     "hin": "hi",
     "tam": "ta",
-    "kan": "kn",
-    "spa": "es"
+    "kan": "kn"
   },
   "masterdataMapping" :{
     "blocklisted-words": {
       "name": {
         "eng": "Blocklisted Words",
-        "spa": "Palabras bloqueadas",
         "ara": "الكلمات المحظورة",
         "fra": "Mots bloqués",
         "tam": "தடுப்புப்பட்டியலில் உள்ள வார்த்தைகள்",
@@ -60,7 +53,6 @@
     "holiday": {
       "name": {
         "eng": "Holiday",
-        "spa": "Día festivo",
         "ara": "قائمة عطلة",
         "fra": "Liste de vacances",
         "tam": "விடுமுறை",
@@ -71,7 +63,6 @@
     "document-type": {
       "name": {
         "eng": "Document Type",
-        "spa": "Tipo de Documento",
         "ara": "أنواع المستندات",
         "fra": "Types de documents",
         "tam": "ஆவண வகை",
@@ -82,7 +73,6 @@
     "templates": {
       "name": {
         "eng": "Templates",
-        "spa": "Plantillas",
         "ara": "قوالب",
         "fra": "Modèles",
         "tam": "வார்ப்புருக்கள்",
@@ -93,7 +83,6 @@
     "machine-type": {
       "name": {
         "eng": "Machine Types",
-        "spa": "Tipos de máquinas",
         "ara": "أنواع الآلات",
         "fra": "Types de machines",
         "tam": "இயந்திர வகைகள்",
@@ -104,7 +93,6 @@
     "device-types": {
       "name": {
         "eng": "Device Types",
-        "spa": "Tipos de dispositivos",
         "ara": "أنواع الأجهزة",
         "fra": "Types de périphériques",
         "tam": "சாதன வகைகள்",
@@ -115,7 +103,6 @@
     "document-categories": {
       "name": {
         "eng": "Document Categories",
-        "spa": "Categorías de documentos",
         "ara": "فئات المستندات",
         "fra": "Catégories de document",
         "tam": "ஆவண வகைகள்",
@@ -126,7 +113,6 @@
     "machine-specs": {
       "name": {
         "eng": "Machine Specification",
-        "spa": "Especificación de la máquina",
         "ara": "المواصفات الجهاز",
         "fra": "Spécifications de la machin",
         "tam": "இயந்திர விவரக்குறிப்பு",
@@ -137,7 +123,6 @@
     "device-specs": {
       "name": {
         "eng": "Device Specification",
-        "spa": "Especificación del dispositivo",
         "ara": "مواصفات الجهاز",
         "fra": "Spécifications de l\"appareil",
         "tam": "சாதன விவரக்குறிப்பு",
@@ -148,7 +133,6 @@
     "center-type": {
       "name": {
         "eng": "Center Type",
-        "spa": "Tipo de centro",
         "ara": "نوع المركز",
         "fra": "Type de centre",
         "tam": "மைய வகை",
@@ -159,7 +143,6 @@
     "dynamicfields": {
       "name": {
         "eng": "Dynamic Field",
-        "spa": "Campo Dinámico",
         "ara": "مجال ديناميكي",
         "fra": "Champ dynamique",
         "tam": "டைனமிக் புலம்",
@@ -170,7 +153,6 @@
     "documentCategoryMapping": {
       "name": {
         "eng": "Document Category - Type Mapping",
-        "spa": "Categoría de documento: asignación de tipos",
         "ara": "فئة الوثيقة - نوع التعيين",
         "fra": "Catégorie de document - Mappage de types",
         "tam": "ஆவண வகை - வகை மேப்பிங்",
