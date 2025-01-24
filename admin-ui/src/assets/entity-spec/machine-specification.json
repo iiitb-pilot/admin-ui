@@ -9,7 +9,7 @@
         "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயல்படுத்த",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -25,7 +25,7 @@
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயலிழக்க",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "संपादित करें",
         "kan": "ತಿದ್ದು",
         "tam": "தொகு",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/machine-specs/single-view/$id",
@@ -57,7 +57,7 @@
         "hin": "बनाएं",
         "kan": "ರಚಿಸಿ",
         "tam": "உருவாக்கு",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -67,7 +67,7 @@
       "validations": ""
     },
     {
-      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ", "tam": "வடிகட்டி", "es": "Filtrar" },
+      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ", "tam": "வடிகட்டி", "spa": "Filtrar" },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
       "actionURL": { "case": "filter" },
@@ -89,7 +89,7 @@
         "hin": "नाम",
         "kan": "ಹೆಸರು",
         "tam": "பெயர்",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -109,7 +109,7 @@
         "hin": "ब्रांड",
         "kan": "ಬ್ರಾಂಡ್",
         "tam": "பிராண்ட்",
-        "es": "Marca"
+        "spa": "Marca"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -129,7 +129,7 @@
         "hin": "नमूना",
         "kan": "ಮಾದರಿ",
         "tam": "மாதிரி",
-        "es": "Modelo"
+        "spa": "Modelo"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -149,7 +149,7 @@
         "hin": "न्यूनतम चालक संस्करण",
         "kan": "ಕನಿಷ್ಠ ಚಾಲಕ ಆವೃತ್ತಿ",
         "tam": "குறைந்தபட்ச இயக்கி பதிப்பு",
-        "es": "Versión mínima del controlador"
+        "spa": "Versión mínima del controlador"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -169,7 +169,7 @@
         "hin": "विवरण",
         "kan": "ವಿವರಣೆ",
         "tam": "விளக்கம்",
-        "es": "Descripción"
+        "spa": "Descripción"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -189,7 +189,7 @@
         "hin": "मशीन की तरह",
         "kan": "ಯಂತ್ರ ಪ್ರಕಾರ",
         "tam": "இயந்திர வகை",
-        "es": "Tipo de máquina"
+        "spa": "Tipo de máquina"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -209,7 +209,7 @@
         "hin": "मशीन की तरह",
         "kan": "ಯಂತ್ರ ಪ್ರಕಾರ",
         "tam": "இயந்திர வகை",
-        "es": "Tipo de máquina"
+        "spa": "Tipo de máquina"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -229,7 +229,7 @@
         "hin": "मशीन युक्ति आईडी",
         "kan": "ಮೆಷಿನ್ ಸ್ಪೆಕ್ ಐಡಿ",
         "tam": "இயந்திர விவரக்குறிப்பு ஐடி",
-        "es": "ID de especificación de la máquina"
+        "spa": "ID de especificación de la máquina"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -247,7 +247,7 @@
         "hin": "के द्वारा बनाई गई",
         "kan": "ರಚಿಸಿದವರು",
         "tam": "உருவாக்கியது",
-        "es": "Creado por"
+        "spa": "Creado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -265,7 +265,7 @@
         "hin": "द्वारा अपडेट",
         "kan": "ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ",
         "tam": "புதுப்பிக்கப்பட்டது",
-        "es": "Actualizado por"
+        "spa": "Actualizado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -283,7 +283,7 @@
         "hin": "अद्यतन समय",
         "kan": "ನವೀಕರಿಸಿದ ಸಮಯ",
         "tam": "புதுப்பிக்கப்பட்ட நேரம்",
-        "es": "Tiempo actualizado"
+        "spa": "Tiempo actualizado"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -301,7 +301,7 @@
         "hin": "बनाया गया समय",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Tiempo creado"
+        "spa": "Tiempo creado"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -312,7 +312,7 @@
       "name": "isActive",
       "showInListView": "true",
       "showInSingleView": "false",
-      "label": { "eng": "Status", "ara": "نشط", "fra": "c'est actif","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை","es": "Estado" },
+      "label": { "eng": "Status", "ara": "نشط", "fra": "c'est actif","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை","spa": "Estado" },
       "sortOrder": "",
       "showAsLink": "false",
       "linkType": "",
@@ -329,7 +329,7 @@
   "filterColumns": [
     {
       "filtername": "name",
-      "filterlabel": { "eng": "Name", "ara": "اسم", "fra": "prénom", "hin": "नाम", "kan": "ಹೆಸರು", "tam": "பெயர்", "es": "Nombre" },
+      "filterlabel": { "eng": "Name", "ara": "اسم", "fra": "prénom", "hin": "नाम", "kan": "ಹೆಸರು", "tam": "பெயர்", "spa": "Nombre" },
       "filterType": "equals",
       "autocomplete": "false",
       "dropdown": "false",
@@ -340,7 +340,7 @@
     },
     {
       "filtername": "isActive",
-      "filterlabel": { "eng": "Status", "ara": "نشط", "fra": "Statut", "hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை", "es": "Estado" },
+      "filterlabel": { "eng": "Status", "ara": "نشط", "fra": "Statut", "hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை", "spa": "Estado" },
       "filterType": "equals",
       "autocomplete": "false",
       "dropdown": "true",
@@ -351,7 +351,7 @@
     },
     {
       "filtername": "brand",
-      "filterlabel": { "eng": "Brand", "ara": "علامة تجارية", "fra": "Marque", "hin": "ब्रांड", "kan": "ಬ್ರಾಂಡ್", "tam": "பிராண்ட்", "es": "Marca" },
+      "filterlabel": { "eng": "Brand", "ara": "علامة تجارية", "fra": "Marque", "hin": "ब्रांड", "kan": "ಬ್ರಾಂಡ್", "tam": "பிராண்ட்", "spa": "Marca" },
       "filterType": "equals",
       "autocomplete": "false",
       "dropdown": "false",
@@ -362,7 +362,7 @@
     },
     {
       "filtername": "model",
-      "filterlabel": { "eng": "Model", "ara": "نموذج", "fra": "Modèle", "hin": "नमूना", "kan": "ಮಾದರಿ", "tam": "மாதிரி", "es": "Modelo" },
+      "filterlabel": { "eng": "Model", "ara": "نموذج", "fra": "Modèle", "hin": "नमूना", "kan": "ಮಾದರಿ", "tam": "மாதிரி", "spa": "Modelo" },
       "filterType": "equals",
       "autocomplete": "false",
       "dropdown": "false",
@@ -380,7 +380,7 @@
         "hin": "मशीन की तरह",
         "kan": "ಯಂತ್ರ ಪ್ರಕಾರ",
         "tam": "இயந்திர வகை",
-        "es": "Tipo de máquina"
+        "spa": "Tipo de máquina"
       },
       "filterType": "equals",
       "autocomplete": "false",

@@ -9,7 +9,7 @@
         "hin": "सक्रिय ",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ  ",
         "tam": "செயல்படுத்த ",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -25,7 +25,7 @@
         "hin": "निष्क्रिय करें  ",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ   ",
         "tam": "செயலிழக்க  ",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "संपादित करें ",
         "kan": "ತಿದ್ದು  ",
         "tam": "தொகு   ",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/templates/single-view/$id",
@@ -57,7 +57,7 @@
         "hin": "सर्जन करना  ",
         "kan": "ರಚಿಸಿ  ",
         "tam": "உருவாக்கு    ",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -67,7 +67,7 @@
       "validations": ""
     },
     {
-      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan":"ಫಿಲ್ಟರ್ ಮಾಡಿ","tam":"வடிகட்டி", "es": "Filtrar" },
+      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan":"ಫಿಲ್ಟರ್ ಮಾಡಿ","tam":"வடிகட்டி", "spa": "Filtrar" },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
       "actionURL": { "case": "filter" },
@@ -83,7 +83,7 @@
         "hin": "टेम्प्लेट हिंदी में उपलब्ध नहीं है  ",
         "kan": "ಕನ್ನಡದಲ್ಲಿ ಟೆಂಪ್ಲೇಟು ಲಭ್ಯವಿಲ್ಲ ",
         "tam": "வார்ப்புரு தமிழில் கிடைக்கவில்லை",
-        "es": "Plantilla no disponible en inglés"
+        "spa": "Plantilla no disponible en inglés"
       },
       "imagePath": "",
       "actionListType": "action",
@@ -96,7 +96,7 @@
           "hin": "टेम्प्लेट हिंदी में उपलब्ध नहीं है  ",
           "kan": "ಕನ್ನಡದಲ್ಲಿ ಟೆಂಪ್ಲೇಟು ಲಭ್ಯವಿಲ್ಲ ",
           "tam": "வார்ப்புரு தமிழில் கிடைக்கவில்லை",
-          "es": "Plantilla no disponible en inglés"
+          "spa": "Plantilla no disponible en inglés"
         },
         "columnNames": [{
           "eng": "Template ID",
@@ -105,7 +105,7 @@
           "hin": "टेम्पलेट आईडी   ",
           "kan": "ಟೆಂಪ್ಲೇಟು ID ",
           "tam": "வார்ப்புரு ஐடி",
-          "es": "ID de plantilla"
+          "spa": "ID de plantilla"
         },{
           "eng": "Name",
           "ara": "اسم",
@@ -113,7 +113,7 @@
           "hin": "नाम    ",
           "kan": "ಹೆಸರು  ",
           "tam": "பெயர்  ",
-          "es": "Nombre"
+          "spa": "Nombre"
         }],
         "fieldName": "name"
       },
@@ -134,7 +134,7 @@
         "hin": "नाम    ",
         "kan": "ಹೆಸರು  ",
         "tam": "பெயர்",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -154,7 +154,7 @@
         "hin": "विवरण    ",
         "kan": "ವಿವರಣೆ   ",
         "tam": "விளக்கம்",
-        "es": "Descripción"
+        "spa": "Descripción"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -174,7 +174,7 @@
         "hin": "नमूना ",
         "kan": "ಮಾದರಿ  ",
         "tam": "மாதிரி",
-        "es": "Modelo"
+        "spa": "Modelo"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -194,7 +194,7 @@
         "hin": "परिदृश्य ",
         "kan": "ಸನ್ನಿವೇಶ   ",
         "tam": "காட்சி",
-        "es": "Escenario"
+        "spa": "Escenario"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -214,7 +214,7 @@
         "hin": "टेम्पलेट प्रारूप ",
         "kan": "ಟೆಂಪ್ಲೇಟು ಸ್ವರೂಪ    ",
         "tam": "வார்ப்புரு வடிவம்",
-        "es": "Formato de plantilla"
+        "spa": "Formato de plantilla"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -234,7 +234,7 @@
         "hin": "टेम्पलेट ",
         "kan": "ಟೆಂಪ್ಲೇಟು  ",
         "tam": "வார்ப்புரு",
-        "es": "Plantilla"
+        "spa": "Plantilla"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -254,7 +254,7 @@
         "hin": "मोड्यूल का नाम  ",
         "kan": "ಮಾಡ್ಯೂಲ್ ಹೆಸರು  ",
         "tam": "தொகுதி பெயர்",
-        "es": "Nombre del módulo"
+        "spa": "Nombre del módulo"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -274,7 +274,7 @@
         "hin": "मोड्यूल का नाम  ",
         "kan": "ಮಾಡ್ಯೂಲ್ ಹೆಸರು  ",
         "tam": "தொகுதி பெயர்",
-        "es": "Nombre del módulo"
+        "spa": "Nombre del módulo"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -294,7 +294,7 @@
         "hin": "बनाया गया समय  ",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ  ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Creado por"
+        "spa": "Creado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -312,7 +312,7 @@
         "hin": "द्वारा अपडेट   ",
         "kan": "ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ   ",
         "tam": "புதுப்பிக்கப்பட்டது",
-        "es": "Actualizado por"
+        "spa": "Actualizado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -330,7 +330,7 @@
         "hin": "दअपडेट किया गया समय  ",
         "kan": "ನವೀಕರಿಸಿದ ಸಮಯ   ",
         "tam": "புதுப்பிக்கப்பட்ட நேரம்",
-        "es": "Tiempo de actualización"
+        "spa": "Tiempo de actualización"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -348,7 +348,7 @@
         "hin": "टेम्पलेट आईडी   ",
         "kan": "ಟೆಂಪ್ಲೇಟು ID ",
         "tam": "வார்ப்புரு ஐடி",
-        "es": "ID de plantilla"
+        "spa": "ID de plantilla"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -366,7 +366,7 @@
         "hin": "बनाया गया समय  ",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ   ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Tiempo de creación"
+        "spa": "Tiempo de creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -384,7 +384,7 @@
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -409,7 +409,7 @@
         "hin": "नाम    ",
         "kan": "ಹೆಸರು  ",
         "tam": "பெயர்",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -428,7 +428,7 @@
         "hin": "मोड्यूल का नाम  ",
         "kan": "ಮಾಡ್ಯೂಲ್ ಹೆಸರು  ",
         "tam": "தொகுதி பெயர்",
-        "es": "Nombre del módulo"
+        "spa": "Nombre del módulo"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -447,7 +447,7 @@
          "hin": "स्थिति",
          "kan": "ಸ್ಥಿತಿ",
          "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
          },
       "filterType": "equals",
       "autocomplete": "false",

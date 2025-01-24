@@ -8,7 +8,7 @@
       "tam": "செயல்படுத்த",
       "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
-        "es": "Activar"
+        "spa": "Activar"
     },
     "actionURL": "",
     "redirectURL": "",
@@ -24,7 +24,7 @@
         "tam": "செயலிழக்க",
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -40,7 +40,7 @@
         "tam": "தொகு",
         "hin": "संपादित करें",
         "kan": "ತಿದ್ದು",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/blocklisted-words/single-view/$id",
@@ -56,7 +56,7 @@
         "tam": "உருவாக்கு",
         "hin": "बनाएं",
         "kan": "ರಚಿಸಿ",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -73,7 +73,7 @@
         "tam": "வடிகட்டி",
         "hin": "फ़िल्टर",
         "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ",
-        "es": "Filtrar"
+        "spa": "Filtrar"
       },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
@@ -96,7 +96,7 @@
       "tam": "தடுப்புப்பட்டியலில் உள்ள வார்த்தைகள்",
       "kan": "ನಿರ್ಬಂಧಿತ ಪದಗಳು",
         "hin": "ब्लॉक लिस्टेड शब्द",
-        "es": "Palabras en Lista Negra"
+        "spa": "Palabras en Lista Negra"
     },
     "sortOrder": "",
     "showAsLink": "",
@@ -116,7 +116,7 @@
         "tam": "விளக்கம்",
         "hin": "विवरण",
         "kan": "ವಿವರಣೆ",
-        "es": "Descripción"
+        "spa": "Descripción"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -135,7 +135,7 @@
         "tam": "நீக்கப்பட்டது",
         "hin": "हटाए गए",
         "kan": "ಅಳಿಸಲಾಗಿದೆ",
-        "es": "Eliminado"
+        "spa": "Eliminado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -153,7 +153,7 @@
         "tam": "உருவாக்கப்பட்டது",
         "hin": "के द्वारा बनाई गई",
         "kan": "ರಚಿಸಿದವರು",
-        "es": "Creado por"
+        "spa": "Creado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -170,7 +170,7 @@
         "tam": "புதுப்பிக்கப்பட்டது",
         "hin": "द्वारा अपडेट",
         "kan": "ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ",
-        "es": "Actualizado por"
+        "spa": "Actualizado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -187,7 +187,7 @@
         "tam": "Created Time",
         "hin": "बनाया गया समय",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ",
-        "es": "Tiempo de Creación"
+        "spa": "Tiempo de Creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -205,7 +205,7 @@
         "tam": "நிலை",
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -224,7 +224,7 @@
     "filtername": "word",
     "filterlabel": {
       "eng": " Blocklisted Words",
-        "es": "Palabras Bloqueadas",
+        "spa": "Palabras Bloqueadas",
       "ara": "الكلمات المحظورة",
       "fra": "Mots bloqués",
       "tam": "தடுப்புப்பட்டியல் சொற்கள்",
@@ -248,7 +248,7 @@
         "tam": "நிலை",
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -267,7 +267,7 @@
         "tam": "Created Time",
         "hin": "बनाया गया समय",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ",
-        "es": "Tiempo de Creación"
+        "spa": "Tiempo de Creación"
       },
       "filterType": "between",
       "inputType": "datetime",

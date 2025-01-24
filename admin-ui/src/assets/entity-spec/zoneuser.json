@@ -9,7 +9,7 @@
         "hin": "सरीमैप ",
         "kan": "ರೀಮ್ಯಾಪ್",
         "tam": "மறுவடிவமைப்பு",
-        "es": "Remapear"
+        "spa": "Remapear"
       },
       "actionURL": "",
       "redirectURL": "/admin/resources/zoneuser/single-view/$id",
@@ -25,7 +25,7 @@
         "hin": "हटाएं",
         "kan": "ಅಳಿಸು",
         "tam": "அழி",
-        "es": "Eliminar"
+        "spa": "Eliminar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயல்படுத்த",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -57,7 +57,7 @@
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயலிழக்க",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -73,7 +73,7 @@
         "hin": "मानचित्र क्षेत्र",
         "kan": "ನಕ್ಷೆ ವಲಯ",
         "tam": "வரைபட மண்டலம்",
-        "es": "Mapear Zona"
+        "spa": "Mapear Zona"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -90,7 +90,7 @@
         "tam": "வடிகட்டி",
         "hin": "फ़िल्टर",
         "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ",
-        "es": "Filtrar"
+        "spa": "Filtrar"
       },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
@@ -111,7 +111,7 @@
         "tam": "பெயர்",
         "hin": "नाम",
         "kan": "ಹೆಸರು",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -129,7 +129,7 @@
         "hin": "जोन कोड",
         "kan": "ವಲಯ ಕೋಡ್ ",
         "tam": "மண்டல குறியீடு",
-        "es": "Nombre de Zona"
+        "spa": "Nombre de Zona"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -147,7 +147,7 @@
         "hin": "के द्वारा बनाई गई ",
         "kan": "ರಚಿಸಿದವರು",
         "tam": "உருவாக்கப்பட்டது",
-        "es": "Creado Por"
+        "spa": "Creado Por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -164,7 +164,7 @@
         "hin": "बनाया गया समय ",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Tiempo de Creación"
+        "spa": "Tiempo de Creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -181,7 +181,7 @@
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -204,7 +204,7 @@
         "tam": "பெயர்",
         "hin": "नाम",
         "kan": "ಹೆಸರು",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "filterType": "equals",
       "fieldType": "input",
@@ -224,7 +224,7 @@
         "tam": "மண்டல பெயர்",
         "hin": "क्षेत्र का नाम",
         "kan": "ವಲಯದ ಹೆಸರು",
-        "es": "Nombre de Zona"
+        "spa": "Nombre de Zona"
       },
       "filterType": "equals",
       "fieldType": "input",

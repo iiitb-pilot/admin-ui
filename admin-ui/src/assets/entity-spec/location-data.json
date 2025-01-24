@@ -9,7 +9,7 @@
         "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயல்படுத்த",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -25,7 +25,7 @@
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயலிழக்க",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "संपादित करें",
         "kan": "ತಿದ್ದು",
         "tam": "தொகு",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/location/single-view/$id",
@@ -57,7 +57,7 @@
         "hin": "बनाएं",
         "kan": "ರಚಿಸಿ",
         "tam": "உருவாக்கு",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -67,7 +67,7 @@
       "validations": ""
     },
     {
-      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ", "tam": "வடிகட்டி", "es": "Filtrar" },
+      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","hin": "फ़िल्टर", "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ", "tam": "வடிகட்டி", "spa": "Filtrar" },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
       "actionURL": { "case": "filter" },
@@ -83,7 +83,7 @@
         "hin": "स्थान अंग्रेजी में उपलब्ध नहीं है",
         "kan": "ಸ್ಥಳ ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ",
         "tam": "இடம் ஆங்கிலத்தில் கிடைக்கவில்லை",
-        "es": "Ubicación no disponible en inglés"
+        "spa": "Ubicación no disponible en inglés"
       },
       "imagePath": "",
       "actionListType": "action",
@@ -96,7 +96,7 @@
           "hin": "स्थान अंग्रेजी में उपलब्ध नहीं है",
           "kan": "ಸ್ಥಳ ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲ",
           "tam": "இடம் ஆங்கிலத்தில் கிடைக்கவில்லை",
-          "es": "Ubicación no disponible en inglés"
+          "spa": "Ubicación no disponible en inglés"
         },
         "columnNames": [{
           "eng": "Code",
@@ -105,7 +105,7 @@
           "hin": "कोड",
           "kan": "ಕೋಡ್",
           "tam": "குறியீடு",
-          "es": "Código"
+          "spa": "Código"
         },{
           "eng": "Name",
           "ara": "اسم",
@@ -113,7 +113,7 @@
           "hin": "नाम",
           "kan": "ಹೆಸರು",
           "tam": "பெயர்",
-          "es": "Nombre"
+          "spa": "Nombre"
         }],
         "fieldName": "name"
       },
@@ -129,7 +129,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Postal Code",
-        "es": "Código Postal",
+        "spa": "Código Postal",
         "ara": "رمز",
         "fra": "code postal",
         "hin": "कोड पोस्टल",
@@ -150,7 +150,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Zone",
-        "es": "Zona",
+        "spa": "Zona",
         "ara": "منطقة",
         "fra": "Zone",
         "hin": "क्षेत्र",
@@ -172,7 +172,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "City",
-        "es": "Ciudad",
+        "spa": "Ciudad",
         "ara": "مدينة",
         "fra": "ville",
         "hin": "शहर",
@@ -191,7 +191,7 @@
       "name": "province",
       "showInListView": "true",
       "showInSingleView": "false",
-      "label": { "eng": "Province", "es": "Provincia", "ara": "المحافظة", "fra": "Province","hin": "प्रांत", "kan": "ಪ್ರಾಂತ್ಯ", "tam": "மாகாணம்"},
+      "label": { "eng": "Province", "spa": "Provincia", "ara": "المحافظة", "fra": "Province","hin": "प्रांत", "kan": "ಪ್ರಾಂತ್ಯ", "tam": "மாகாணம்"},
       "sortOrder": "",
       "showAsLink": "false",
       "linkType": "",
@@ -204,7 +204,7 @@
       "name": "region",
       "showInListView": "true",
       "showInSingleView": "false",
-      "label": { "eng": "Region", "es": "Región", "ara": "منطقة", "fra": "Région","hin": "क्षेत्र", "kan": "ಪ್ರದೇಶ", "tam": "பிராந்தியம்"},
+      "label": { "eng": "Region", "spa": "Región", "ara": "منطقة", "fra": "Région","hin": "क्षेत्र", "kan": "ಪ್ರದೇಶ", "tam": "பிராந்தியம்"},
       "sortOrder": "",
       "showAsLink": "false",
       "linkType": "",
@@ -219,7 +219,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Created By",
-        "es": "Creado Por",
+        "spa": "Creado Por",
         "ara": "تم إنشاؤه من قبل",
         "fra": "Créé par",
         "hin": "के द्वारा बनाई गई",
@@ -237,7 +237,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Updated By",
-        "es": "Actualizado Por",
+        "spa": "Actualizado Por",
         "ara": "تم التحديث بواسطة",
         "fra": "Mise à jour par",
         "hin": "द्वारा अपडेट",
@@ -255,7 +255,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Updated Time",
-        "es": "Tiempo de Actualización",
+        "spa": "Tiempo de Actualización",
         "ara": "وقت التحديث",
         "fra": "Temps mis à jour",
         "hin": "अद्यतन समय",
@@ -273,7 +273,7 @@
       "showInSingleView": "false",
       "label": {
         "eng": "Created Time",
-        "es": "Tiempo de Creación",
+        "spa": "Tiempo de Creación",
         "ara": "الوقت الذي تم إنشاؤه",
         "fra": "Temps créé",
         "hin": "बनाया गया समय",
@@ -289,7 +289,7 @@
       "name": "isActive",
       "showInListView": "true",
       "showInSingleView": "false",
-      "label": { "eng": "Status", "es": "Estado", "ara": "نشط", "fra": "c'est actif","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை"},
+      "label": { "eng": "Status", "spa": "Estado", "ara": "نشط", "fra": "c'est actif","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை"},
       "sortOrder": "",
       "showAsLink": "false",
       "linkType": "",
@@ -306,7 +306,7 @@
   "filterColumns": [
     {
       "filtername": "isActive",
-      "filterlabel": { "eng": "Status", "ara": "نشط", "fra": "Statut","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை", "es": "Estado" },
+      "filterlabel": { "eng": "Status", "ara": "نشط", "fra": "Statut","hin": "स्थिति", "kan": "ಸ್ಥಿತಿ", "tam": "நிலை", "spa": "Estado" },
       "filterType": "contains",
       "fieldType": "input",
       "autocomplete": "false",
@@ -318,7 +318,7 @@
     },
     {
       "filtername": "region",
-      "filterlabel": { "eng": "Region", "ara": "منطقة", "fra": "Région","hin": "क्षेत्र", "kan": "ಪ್ರದೇಶ", "tam": "பிராந்தியம்", "es": "Región" },
+      "filterlabel": { "eng": "Region", "ara": "منطقة", "fra": "Région","hin": "क्षेत्र", "kan": "ಪ್ರದೇಶ", "tam": "பிராந்தியம்", "spa": "Región" },
       "filterType": "contains",
       "fieldType": "input",
       "autocomplete": "true",
@@ -330,7 +330,7 @@
     },
     {
       "filtername": "province",
-      "filterlabel": { "eng": "Province", "ara":"المحافظة", "fra": "Province","hin": "प्रांत", "kan": "ಪ್ರಾಂತ್ಯ", "tam": "மாகாணம்", "es": "Provincia" },
+      "filterlabel": { "eng": "Province", "ara":"المحافظة", "fra": "Province","hin": "प्रांत", "kan": "ಪ್ರಾಂತ್ಯ", "tam": "மாகாணம்", "spa": "Provincia" },
       "filterType": "contains",
       "fieldType": "input",
       "autocomplete": "true",
@@ -342,7 +342,7 @@
     },
     {
       "filtername": "city",
-      "filterlabel":{ "eng": "City", "ara":"مدينة", "fra": "Ville","hin": "शहर","kan": "ನಗರ","tam": "நகரம்", "es": "Ciudad" },
+      "filterlabel":{ "eng": "City", "ara":"مدينة", "fra": "Ville","hin": "शहर","kan": "ನಗರ","tam": "நகரம்", "spa": "Ciudad" },
       "uiField": "string",
       "filterType": "contains",
       "fieldType": "input",
@@ -357,7 +357,7 @@
       "filtername": "Zone",
       "filterlabel": { "eng": "Zone", "ara":"منطقة", "fra": "Zone","hin": "क्षेत्र",
         "kan": "ವಲಯ",
-        "tam": "மண்டலம்", "es": "Zona" },
+        "tam": "மண்டலம்", "spa": "Zona" },
       "filterType": "contains",
       "fieldType": "input",
       "autocomplete": "true",
@@ -369,7 +369,7 @@
     },
     {
       "filtername": "postalCode",
-      "filterlabel": { "eng": "Pin Code", "ara":"الرقم السري", "fra": "Code PIN","hin": "पिन कोड", "kan":"ಪಿನ್ ಕೋಡ್", "tam": "அஞ்சல் குறியீடு", "es": "Código Postal" },
+      "filterlabel": { "eng": "Pin Code", "ara":"الرقم السري", "fra": "Code PIN","hin": "पिन कोड", "kan":"ಪಿನ್ ಕೋಡ್", "tam": "அஞ்சல் குறியீடு", "spa": "Código Postal" },
       "filterType": "contains",
       "fieldType": "input",
       "autocomplete": "true",
