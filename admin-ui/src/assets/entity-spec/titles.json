@@ -9,7 +9,7 @@
         "hin": "सक्रिय ",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ  ",
         "tam": "செயல்படுத்த",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -25,7 +25,7 @@
         "hin": "निष्क्रिय करें  ",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ   ",
         "tam": "செயலிழக்க",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "संपादित करें ",
         "kan": "ತಿದ್ದು  ",
         "tam": "தொகு",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/title/single-view/$id",
@@ -57,7 +57,7 @@
         "hin": "सर्जन करना  ",
         "kan": "ರಚಿಸಿ  ",
         "tam": "உருவாக்கு",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -67,7 +67,7 @@
       "validations": ""
     },
     {
-      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","es": "Filtrar" },
+      "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre","spa": "Filtrar" },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
       "actionURL": { "case": "filter" },
@@ -88,7 +88,7 @@
         "hin": "कोड   ",
         "kan": "ಕೋಡ್ ",
         "tam": "குறியீடு",
-        "es": "Código"
+        "spa": "Código"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -109,7 +109,7 @@
         "hin": "नाम    ",
         "kan": "ಹೆಸರು  ",
         "tam": "பெயர்",
-        "es": "Nombre"
+        "spa": "Nombre"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -127,7 +127,7 @@
         "hin": "विवरण ",
         "kan": "ವಿವರಣೆ   ",
         "tam": "விளக்கம்",
-        "es": "Descripción"
+        "spa": "Descripción"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -147,7 +147,7 @@
         "hin": "बनाया गया समय  ",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ  ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Creado por"
+        "spa": "Creado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -165,7 +165,7 @@
         "hin": "द्वारा अपडेट   ",
         "kan": "ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ   ",
         "tam": "புதுப்பிக்கப்பட்டது",
-        "es": "Actualizado por"
+        "spa": "Actualizado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -183,7 +183,7 @@
         "hin": "दअपडेट किया गया समय  ",
         "kan": "ನವೀಕರಿಸಿದ ಸಮಯ   ",
         "tam": "புதுப்பிக்கப்பட்ட நேரம்",
-        "es": "Tiempo de actualización"
+        "spa": "Tiempo de actualización"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -201,7 +201,7 @@
         "hin": "बनाया गया समय  ",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ  ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Tiempo de creación"
+        "spa": "Tiempo de creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -215,7 +215,7 @@
       "label": { "eng": "Status", "ara": "نشط", "fra": "c'est actif","hin": "स्थिति ",
         "kan": "ಸ್ಥಿತಿ    ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -236,7 +236,7 @@
       "filterlabel": { "eng": "Status", "ara": "نشط", "fra": "Statut", "hin": "स्थिति ",
         "kan": "ಸ್ಥಿತಿ    ",
         "tam": "நிலை",
-        "es": "Estado" },
+        "spa": "Estado" },
       "filterType": "equals",
       "autocomplete": "false",
       "dropdown": "true",

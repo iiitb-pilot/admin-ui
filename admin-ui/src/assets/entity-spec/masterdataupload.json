@@ -9,7 +9,7 @@
         "hin": "डेटा अपलोड करें  ",
         "kan": "ಡೇಟಾವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ   ",
         "tam": "தரவைப் பதிவேற்றுக",
-        "es": "Cargar datos"
+        "spa": "Cargar datos"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -27,7 +27,7 @@
         "hin": "लेन-देन आईडी  ",
         "kan": "ವಹಿವಾಟು ID   ",
         "tam": "பரிவர்த்தனை ஐடி  ",
-        "es": "ID de transacción"
+        "spa": "ID de transacción"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -41,7 +41,7 @@
         "hin": "तालिका नाम   ",
         "kan": "ಟೇಬಲ್ ಹೆಸರು ",
         "tam": " அட்டவணை பெயர்",
-        "es": "Nombre de la tabla"
+        "spa": "Nombre de la tabla"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -55,7 +55,7 @@
         "hin": "कार्यवाही    ",
         "kan": "ಕಾರ್ಯಾಚರಣೆ  ",
         "tam": " செயல்பாடு  ",
-        "es": "Operación"
+        "spa": "Operación"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -68,7 +68,7 @@
       "label": {"eng": "Count","ara": "المستخدمين","fra": "Utilisateur","hin": "गिनती   ",
         "kan": "ಎಣಿಕೆ  ",
         "tam": "எண்ணிக்கை",
-        "es": "Cantidad"
+        "spa": "Cantidad"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -82,7 +82,7 @@
         "hin": "स्थिति   ",
         "kan": "ಸ್ಥಿತಿ   ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -96,7 +96,7 @@
         "hin": "द्वारा डाली गई  ",
         "kan": "ಇವರಿಂದ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ   ",
         "tam": "பதிவேற்றியது  ",
-        "es": "Cargado por"
+        "spa": "Cargado por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -110,7 +110,7 @@
         "hin": "समय टिकट    ",
         "kan": "ಟೈಮ್‌ಸ್ಟ್ಯಾಂಪ್  ",
         "tam": " நேர முத்திரை  ",
-        "es": "Fecha y hora"
+        "spa": "Fecha y hora"
       },
       "sortOrder": "",
       "showAsLink": "",

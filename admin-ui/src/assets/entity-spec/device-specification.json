@@ -8,7 +8,7 @@
       "tam": "செயல்படுத்த",
       "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
-        "es": "Activar"
+        "spa": "Activar"
     },
     "actionURL": "",
     "redirectURL": "",
@@ -24,7 +24,7 @@
         "tam": "செயலிழக்க",
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -40,7 +40,7 @@
         "tam": "தொகு",
         "hin": "संपादित करें",
         "kan": "ತಿದ್ದು",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/masterdata/device-specs/single-view/$id",
@@ -56,7 +56,7 @@
         "tam": "உருவாக்கு",
         "hin": "बनाएं",
         "kan": "ರಚಿಸಿ",
-        "es": "Crear"
+        "spa": "Crear"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -73,7 +73,7 @@
         "tam": "வடிகட்டி",
         "hin": "फ़िल्टर",
         "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ",
-        "es": "Filtrar"
+        "spa": "Filtrar"
       },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
@@ -96,7 +96,7 @@
       "tam": "பெயர்",
       "hin": "नाम",
         "kan": "ಹೆಸರು",
-        "es": "Nombre"
+        "spa": "Nombre"
     },
     "sortOrder": "",
     "showAsLink": "",
@@ -116,7 +116,7 @@
         "tam": "விளக்கம்",
         "hin": "विवरण",
         "kan": "ವಿವರಣೆ",
-        "es": "Descripción"
+        "spa": "Descripción"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -136,7 +136,7 @@
         "tam": "பிராண்ட்",
         "hin": "ब्रांड",
         "kan": "ಬ್ರಾಂಡ್",
-        "es": "Marca"
+        "spa": "Marca"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -156,7 +156,7 @@
         "tam": "மாதிரி",
         "hin": "नमूना",
         "kan": "ಮಾದರಿ",
-        "es": "Modelo"
+        "spa": "Modelo"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -176,7 +176,7 @@
         "tam": "குறைந்தபட்ச இயக்கி பதிப்பு",
         "hin": "न्यूनतम चालक संस्करण",
         "kan": "ಕನಿಷ್ಠ ಚಾಲಕ ಆವೃತ್ತಿ",
-        "es": "Versión Mínima del Controlador"
+        "spa": "Versión Mínima del Controlador"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -196,7 +196,7 @@
         "tam": "கருவியின் வகை",
         "hin": "उपकरण का प्रकार",
         "kan": "ಸಾಧನ ಪ್ರಕಾರ",
-        "es": "Tipo de Dispositivo"
+        "spa": "Tipo de Dispositivo"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -216,7 +216,7 @@
         "tam": "இயந்திர விவரக்குறிப்பு ஐடி",
         "hin": "मशीन युक्ति आईडी",
         "kan": "ಮೆಷಿನ್ ಸ್ಪೆಕ್ ಐಡಿ",
-        "es": "ID de Especificación de la Máquina"
+        "spa": "ID de Especificación de la Máquina"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -234,7 +234,7 @@
         "tam": "உருவாக்கப்பட்டது",
         "hin": "के द्वारा बनाई गई",
         "kan": "ರಚಿಸಿದವರು",
-        "es": "Creado Por"
+        "spa": "Creado Por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -252,7 +252,7 @@
         "tam": "புதுப்பிக்கப்பட்டது",
         "hin": "द्वारा अपडेट",
         "kan": "ಇವರಿಂದ ನವೀಕರಿಸಲಾಗಿದೆ",
-        "es": "Actualizado Por"
+        "spa": "Actualizado Por"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -270,7 +270,7 @@
         "tam": "புதுப்பிக்கப்பட்ட நேரம்",
         "hin": "अद्यतन समय",
         "kan": "ನವೀಕರಿಸಿದ ಸಮಯ",
-        "es": "Tiempo de Actualización"
+        "spa": "Tiempo de Actualización"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -288,7 +288,7 @@
         "tam": "Created Time",
         "hin": "बनाया गया समय",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ",
-        "es": "Tiempo de Creación"
+        "spa": "Tiempo de Creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -306,7 +306,7 @@
         "tam": "நிலை",
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -330,7 +330,7 @@
       "tam": "பெயர்",
       "hin": "नाम",
         "kan": "ಹೆಸರು",
-        "es": "Nombre"
+        "spa": "Nombre"
     },
     "filterType": "equals",
     "autocomplete": "false",
@@ -349,7 +349,7 @@
         "tam": "நிலை",
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -368,7 +368,7 @@
         "tam": "பிராண்ட்",
         "hin": "ब्रांड",
         "kan": "ಬ್ರಾಂಡ್",
-        "es": "Marca"
+        "spa": "Marca"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -387,7 +387,7 @@
         "tam": "மாதிரி",
         "hin": "नमूना",
         "kan": "ಮಾದರಿ",
-        "es": "Modelo"
+        "spa": "Modelo"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -406,7 +406,7 @@
         "tam": "கருவியின் வகை",
         "hin": "उपकरण का प्रकार",
         "kan": "ಸಾಧನ ಪ್ರಕಾರ",
-        "es": "Tipo de Dispositivo"
+        "spa": "Tipo de Dispositivo"
       },
       "filterType": "equals",
       "autocomplete": "false",

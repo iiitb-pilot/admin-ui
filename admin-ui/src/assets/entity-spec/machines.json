@@ -9,7 +9,7 @@
         "hin": "सक्रिय",
         "kan": "ಸಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயல்படுத்த",
-        "es": "Activar"
+        "spa": "Activar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -25,7 +25,7 @@
         "hin": "निष्क्रिय करें",
         "kan": "ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
         "tam": "செயலிழக்க",
-        "es": "Desactivar"
+        "spa": "Desactivar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -41,7 +41,7 @@
         "hin": "डीकमिशन",
         "kan": "ಡಿಕೊಮಿಷನ್",
         "tam": "நீக்கம்",
-        "es": "Desmantelar"
+        "spa": "Desmantelar"
       },
       "actionURL": "",
       "redirectURL": "",
@@ -57,7 +57,7 @@
         "hin": "संपादित करें",
         "kan": "ತಿದ್ದು",
         "tam": "தொகு",
-        "es": "Editar"
+        "spa": "Editar"
       },
       "actionURL": "",
       "redirectURL": "/admin/resources/machines/single-view/$id",
@@ -73,7 +73,7 @@
         "hin": "मशीन बनाएं",
         "kan": "ಯಂತ್ರವನ್ನು ರಚಿಸಿ",
         "tam": "இயந்திரத்தை உருவாக்கவும்",
-        "es": "Crear máquina"
+        "spa": "Crear máquina"
       },
       "imagePath": "assets/images/add-icon.png",
       "actionListType": "redirect",
@@ -90,7 +90,7 @@
         "hin": "फ़िल्टर",
         "kan": "ಫಿಲ್ಟರ್ ಮಾಡಿ",
         "tam": "வடிகட்டி",
-        "es": "Filtrar"
+        "spa": "Filtrar"
       },
       "imagePath": "assets/images/filter.png",
       "actionListType": "action",
@@ -111,7 +111,7 @@
         "hin": "मशीन का नाम",
         "kan": "ಯಂತ್ರದ ಹೆಸರು",
         "tam": "இயந்திரத்தின் பெயர்",
-        "es": "Nombre de la máquina"
+        "spa": "Nombre de la máquina"
       },
       "sortOrder": "3",
       "showAsLink": "",
@@ -128,7 +128,7 @@
         "hin": "मशीन की तरह",
         "kan": "ಯಂತ್ರ ಪ್ರಕಾರ",
         "tam": "இயந்திர வகை",
-        "es": "Tipo de máquina"
+        "spa": "Tipo de máquina"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -145,7 +145,7 @@
         "hin": "मैक पते",
         "kan": "ಮ್ಯಾಕ್ ವಿಳಾಸ",
         "tam": "Mac முகவரி",
-        "es": "Dirección Mac"
+        "spa": "Dirección Mac"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -162,7 +162,7 @@
         "hin": "क्रमिक संख्या",
         "kan": "ಕ್ರಮ ಸಂಖ್ಯೆ",
         "tam": "வரிசை எண்",
-        "es": "Número de serie"
+        "spa": "Número de serie"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -179,7 +179,7 @@
         "hin": "केंद्र",
         "kan": "ಕೇಂದ್ರ",
         "tam": "மையம்",
-        "es": "Centro"
+        "spa": "Centro"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -196,7 +196,7 @@
         "hin": "बनाया गया समय",
         "kan": "ಸಮಯವನ್ನು ರಚಿಸಲಾಗಿದೆ",
         "tam": "நேரம் உருவாக்கப்பட்டது",
-        "es": "Hora de creación"
+        "spa": "Hora de creación"
       },
       "sortOrder": "",
       "showAsLink": "",
@@ -213,7 +213,7 @@
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "sortOrder": "",
       "showAsLink": "false",
@@ -236,7 +236,7 @@
         "hin": "मशीन का नाम",
         "kan": "ಯಂತ್ರದ ಹೆಸರು",
         "tam": "இயந்திரத்தின் பெயர்",
-        "es": "Nombre de la máquina"
+        "spa": "Nombre de la máquina"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -255,7 +255,7 @@
         "hin": "स्थिति",
         "kan": "ಸ್ಥಿತಿ",
         "tam": "நிலை",
-        "es": "Estado"
+        "spa": "Estado"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -274,7 +274,7 @@
         "hin": "मैक पते",
         "kan": "ಮ್ಯಾಕ್ ವಿಳಾಸ",
         "tam": "Mac முகவரி",
-        "es": "Dirección MAC"
+        "spa": "Dirección MAC"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -289,7 +289,7 @@
       "filterlabel": {"eng":"Serial Number","ara":"رقم سري", "fra": "Numéro de série","hin": "क्रमिक संख्या",
         "kan": "ಕ್ರಮ ಸಂಖ್ಯೆ",
         "tam": "வரிசை எண்",
-        "es": "Número de serie"
+        "spa": "Número de serie"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -308,7 +308,7 @@
         "hin": "मशीन की तरह",
         "kan": "ಯಂತ್ರ ಪ್ರಕಾರ",
         "tam": "இயந்திர வகை",
-        "es": "Tipo de máquina"
+        "spa": "Tipo de máquina"
       },
       "filterType": "equals",
       "autocomplete": "false",
