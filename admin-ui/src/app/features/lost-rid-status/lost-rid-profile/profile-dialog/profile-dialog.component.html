@@ -1,0 +1,34 @@
+<!-- profile-dialog.component.html -->
+<h2 mat-dialog-title>
+  {{ "lostRID.applicationId" | translate }} :{{ data.dataSource[data.i].registrationId }}
+</h2>
+<div mat-dialog-content class="mat-con">
+  <div class="dialog-content">
+    <img
+      [src]="data.lostData.applicantPhoto"
+      alt="Profile Photo"
+      class="profile-photo"
+    />
+    <div class="dialog-info">
+      <p>
+        {{ "lostRID.name" | translate }}: <strong>{{ name }}</strong>
+      </p>
+      <p>
+        {{ "lostRID.enrolmentDate" | translate }}:
+        <strong>{{ data.dataSource[data.i].registartionDate }}</strong>
+      </p>
+      <p>
+        {{ "lostRID.dateOfBirth" | translate }}: <strong>{{ data.lostData.dateOfBirth }}</strong>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="actions-container">
+  <!-- <div mat-dialog-actions class="button-row">
+    <button mat-button mat-stroked-button color="primary" (click)="onPrint()">Print Acknowledgement</button>
+    <button mat-button mat-stroked-button color="accent" (click)="onResend()">Resend Acknowledgement</button>
+  </div> -->
+  <div mat-dialog-actions class="close-button-row">
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>

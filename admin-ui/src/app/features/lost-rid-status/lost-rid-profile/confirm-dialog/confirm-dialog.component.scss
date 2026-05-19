@@ -1,0 +1,48 @@
+/* This is where you would add your custom CSS styles */
+mat-dialog-container {
+    width: 400px; /* Example width */
+  }
+  
+  mat-dialog-title {
+    font-weight: bold;
+  }
+  
+ .mat-div{
+   padding: 0px !important;
+ }
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
+  .pop-up {
+    .pop-up-header {
+      padding: 16px !important;
+    }
+    .mat-dialog-content {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-family:"Roboto", sans-serif;
+      font-size: small;
+    }
+    .pop-up-footer  {
+      background: #e6e7e7;
+      margin-bottom: 0px;
+      padding: 0 16px;
+      .mat-button {
+        outline: 1px solid #FF4081 !important;
+        margin: 0 10px;
+        border-radius: 0;
+        color: #FF4081;
+      }
+    }
+    .pop-up-footer {
+      .mat-button:focus {
+        background: #FF4081 !important;
+        color: #ffffff;
+        outline: 0 !important;
+      }
+    }
+  }
+  
