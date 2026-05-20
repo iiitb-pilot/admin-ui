@@ -21,8 +21,14 @@ export class LogoutService {
     private appService: AppConfigService
   ) {}
 
-  logout() {
-    //TODO: NEED TO CHECK THE IMPLEMENTATION LATER
-    window.location.href = `${this.appService.getConfig().baseUrl}${this.appService.getConfig().logout}?redirecturi=`+btoa(window.location.href);
-  }
+logout() {
+  const redirectUrl = window.location.href;
+
+  const finalUrl =
+    `${this.appService.getConfig().baseUrl}` +
+    `${this.appService.getConfig().logout}` +
+    `?redirecturi=${redirectUrl}`;
+
+  window.location.href = finalUrl;
+}
 }
