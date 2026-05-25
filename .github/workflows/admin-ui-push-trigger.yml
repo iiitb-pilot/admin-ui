@@ -25,7 +25,7 @@ on:
 
 jobs:
   build-admin-ui:
-    uses: iiitb-pilot/kattu/.github/workflows/npm-build.yml@develop
+    uses: iiitb-pilot/kattu/.github/workflows/npm-build.yml@master-java21
     with:
       SERVICE_LOCATION: ./admin-ui
       BUILD_ARTIFACT: admin-ui
@@ -43,7 +43,7 @@ jobs:
             BUILD_ARTIFACT: 'admin-ui'
       fail-fast: false
     name: ${{ matrix.SERVICE_NAME }}
-    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master
+    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master-java21
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
