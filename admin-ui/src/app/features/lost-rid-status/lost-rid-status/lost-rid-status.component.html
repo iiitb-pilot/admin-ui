@@ -1,148 +1,83 @@
 <ng-container>
-  <span
-    ><h3 class="header">{{ "lostRID.titleTxt" | translate }}</h3></span
-  >
+  <span>
+    <h3 class="header">{{ "lostRID.titleTxt" | translate }}</h3>
+  </span>
   <div id="flex-single-view" style="padding-top: 12px; padding-bottom: 10px">
     <div id="flex-container">
-      <div
-        id="myDiv"
-        class="flex-body"
-        *ngIf="displayedColumns && actionEllipsis"
-      >
+      <div id="myDiv" class="flex-body" *ngIf="displayedColumns && actionEllipsis">
         <mat-card *ngIf="filterColumns">
           <div class="example-container">
-            <span
-              ><h3 class="header">
+            <span>
+              <h3 class="header">
                 {{ "lostRID.subtitleenrollment" | translate }}
-              </h3></span
-            >
-            <div
-              *ngFor="let field of filterColumns; let i = index"
-              style="display: inline-flex"
-            >
-              <mat-form-field
-                *ngIf="
+              </h3>
+            </span>
+            <div *ngFor="let field of filterColumns; let i = index" style="display: inline-flex">
+              <mat-form-field *ngIf="
                   field.dropdown === 'false' && field.datePicker !== 'true'
-                "
-                style="padding: 10px; width: 255px"
-              >
-                <input
-                  #{{field.filtername}}
-                  id="{{ field.filtername }}"
-                  (blur)="captureValue($event, field.filtername)"
-                  matInput
-                  placeholder="{{ field.filterlabel[primaryLang] | translate }}"
-                  required="{{ field.ismandatory }}"
-                  [value]="fieldNameList[field.filtername]"
-                />
+                " style="padding: 10px; width: 255px">
+                <input #{{field.filtername}} id="{{ field.filtername }}" (blur)="captureValue($event, field.filtername)"
+                  matInput placeholder="{{ field.filterlabel[primaryLang] | translate }}"
+                  required="{{ field.ismandatory }}" [value]="fieldNameList[field.filtername]" />
               </mat-form-field>
 
-              <mat-form-field
-                *ngIf="field.dropdown !== 'true' && field.datePicker === 'true'"
-                style="padding: 10px; width: 255px"
-              >
-                <input
-                  matInput
-                  [matDatepicker]="picker"
-                  placeholder="{{ field.filterlabel[primaryLang] | translate }}"
-                  id="{{ field.filtername }}"
-                  (dateChange)="
+              <mat-form-field *ngIf="field.dropdown !== 'true' && field.datePicker === 'true'"
+                style="padding: 10px; width: 255px">
+                <input matInput [matDatepicker]="picker" placeholder="{{ field.filterlabel[primaryLang] | translate }}"
+                  id="{{ field.filtername }}" (dateChange)="
                     captureDatePickerValue($event, field.filtername)
-                  "
-                  required="{{ field.ismandatory }}"
-                  [value]="fieldNameList[field.filtername]"
-                />
-                <mat-datepicker-toggle
-                  matSuffix
-                  [for]="picker"
-                ></mat-datepicker-toggle>
+                  " required="{{ field.ismandatory }}" [value]="fieldNameList[field.filtername]" />
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
             </div>
-            <span
-              ><h3 class="header">
+            <span>
+              <h3 class="header">
                 {{ "lostRID.subtitlelocation" | translate }}
-              </h3></span
-            >
-            <div
-              *ngFor="let field of filterColumns; let i = index"
-              style="display: inline-flex"
-            >
-              <mat-form-field
-                *ngIf="
+              </h3>
+            </span>
+            <div *ngFor="let field of filterColumns; let i = index" style="display: inline-flex">
+              <mat-form-field *ngIf="
                   field.dropdown === 'true' &&
                   field.datePicker !== 'true' &&
                   dynamicDropDown[field.filtername] &&
                   field.filtername !== 'centerId'
-                "
-                style="padding: 10px; width: 255px"
-              >
-                <mat-select
-                  id="{{ field.filtername }}"
-                  required="{{ field.ismandatory }}"
+                " style="padding: 10px; width: 255px">
+                <mat-select id="{{ field.filtername }}" required="{{ field.ismandatory }}"
                   placeholder="{{ field.filterlabel[primaryLang] | translate }}"
-                  [value]="fieldNameList[field.filtername]"
-                >
-                  <mat-option
-                    *ngFor="let data of dynamicDropDown[field.filtername]"
-                    (onSelectionChange)="
+                  [value]="fieldNameList[field.filtername]">
+                  <mat-option *ngFor="let data of dynamicDropDown[field.filtername]" (onSelectionChange)="
                       captureDropDownValue($event, field.filtername)
-                    "
-                    [value]="data.fieldValue"
-                  >
+                    " [value]="data.fieldValue">
                     {{ data.fieldValue }}
                   </mat-option>
                 </mat-select>
               </mat-form-field>
-              <mat-form-field
-                *ngIf="
+              <mat-form-field *ngIf="
                   field.dropdown === 'true' &&
                   field.datePicker !== 'true' &&
                   field.filtername === 'centerId'
-                "
-                style="padding: 10px; width: 255px"
-              >
-                <mat-select
-                  id="{{ field.filtername }}"
-                  required="{{ field.ismandatory }}"
+                " style="padding: 10px; width: 255px">
+                <mat-select id="{{ field.filtername }}" required="{{ field.ismandatory }}"
                   placeholder="{{ field.filterlabel[primaryLang] | translate }}"
-                  [value]="fieldNameList[field.filtername]"
-                >
-                  <mat-option
-                    *ngFor="let data of dynamicDropDown[field.filtername]"
-                    (onSelectionChange)="
+                  [value]="fieldNameList[field.filtername]">
+                  <mat-option *ngFor="let data of dynamicDropDown[field.filtername]" (onSelectionChange)="
                       captureDropDownValue($event, field.filtername)
-                    "
-                    [value]="data.fieldCode"
-                  >
+                    " [value]="data.fieldCode">
                     {{ data.fieldValue }} ({{ data.fieldCode }})
                   </mat-option>
                 </mat-select>
               </mat-form-field>
             </div>
 
-            <button
-              mat-raised-button
-              class="footer-button"
-              (click)="resetForm()"
-              style="color: #ff4081; background-color: white"
-              id="reset"
-            >
-              {{ "lostRID.clearbtn" | translate }}</button
-            >&nbsp;&nbsp;&nbsp;&nbsp;
-            <button
-              mat-raised-button
-              type="submit"
-              mat-button
-              class="footer-button"
-              (click)="submit()"
-              style="
+            <button mat-raised-button class="footer-button" (click)="resetForm()"
+              style="color: #ff4081; background-color: white" id="reset">
+              {{ "lostRID.clearbtn" | translate }}</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button mat-raised-button type="submit" mat-button class="footer-button" (click)="submit()" style="
                 background-color: #ff4081;
                 color: white;
                 width: 90px !important;
-              "
-              id="applyTxt"
-            >
+              " id="applyTxt">
               {{ "lostRID.searchbtn" | translate }}
             </button>
           </div>
@@ -162,12 +97,7 @@
       (sort)="getSortColumn($event)"
     ></app-table> -->
 
-      <table
-        mat-table
-        *ngIf="dataSource.length > 0"
-        [dataSource]="dataSource"
-        class="tableMain"
-      >
+      <table mat-table *ngIf="paginatedData.length > 0" [dataSource]="paginatedData" class="tableMain">
         <!-- ID Column -->
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef>AID</th>
@@ -187,12 +117,7 @@
         <ng-container matColumnDef="action">
           <th mat-header-cell *matHeaderCellDef>Action</th>
           <td mat-cell *matCellDef="let element; let i = index">
-            <button
-              mat-icon-button
-              color="primary"
-              [disabled]="actionButton"
-              (click)="fetchLostRidDetails(element, i)"
-            >
+            <button mat-icon-button color="primary" [disabled]="actionButton" (click)="fetchLostRidDetails(element, i)">
               <mat-icon>remove_red_eye</mat-icon>
             </button>
           </td>
@@ -201,6 +126,11 @@
         <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns1"></tr>
       </table>
+
+      <!-- Pagination -->
+
+      <mat-paginator [length]="totalRecords" [pageSize]="pageSize" [pageIndex]="pageIndex"
+        (page)="handlePageEvent($event)"></mat-paginator>
       <!--   <table *ngFor="let data of datas; let i = index">
       <tr>
         <td>{{data.registrationId}}</td>

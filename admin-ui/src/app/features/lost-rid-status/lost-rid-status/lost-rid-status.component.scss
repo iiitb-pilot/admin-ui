@@ -141,3 +141,67 @@ h3 {
 .padding{
     padding-left: 16px !important;
 }
+
+$paginator-accent:        #ff4081;
+$paginator-disabled-bg:   #e0e0e0;
+$paginator-disabled-icon: #9e9e9e;
+$paginator-border:        #e0e0e0;
+$paginator-text:          #444;
+$paginator-btn-size:      28px;
+$paginator-icon-size:     18px;
+
+@mixin nav-btn-state($bg, $icon-fill, $opacity: 1) {
+  background-color: $bg !important;
+  opacity: $opacity !important;
+
+  .mat-paginator-icon {
+    fill: $icon-fill !important;
+  }
+}
+
+::ng-deep {
+  .mat-paginator {
+    background: #fff;
+    border-top: 1px solid $paginator-border;
+    padding: 8px 12px;
+    border-radius: 6px;
+  }
+
+  .mat-paginator-navigation-first,
+  .mat-paginator-navigation-previous,
+  .mat-paginator-navigation-next,
+  .mat-paginator-navigation-last {
+    width: $paginator-btn-size !important;
+    height: $paginator-btn-size !important;
+    line-height: $paginator-btn-size !important;
+    min-width: $paginator-btn-size !important;
+    padding: 0 !important;
+    border-radius: 4px !important;
+    margin: 0 2px;
+
+    .mat-paginator-icon {
+      width: $paginator-icon-size !important;
+    }
+
+    &:not([disabled]) {
+      @include nav-btn-state($paginator-accent, white);
+    }
+
+    &[disabled] {
+      @include nav-btn-state($paginator-disabled-bg, $paginator-disabled-icon, 0.5);
+    }
+  }
+
+  .mat-paginator-range-label {
+    margin: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $paginator-text;
+    min-width: 95px;
+    text-align: center;
+  }
+
+  .mat-paginator-page-size-select {
+    margin: 0 8px;
+  }
+}

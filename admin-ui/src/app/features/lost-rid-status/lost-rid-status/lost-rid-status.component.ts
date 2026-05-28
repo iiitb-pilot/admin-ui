@@ -67,8 +67,13 @@ export class LostRidStatusComponent implements OnInit {
   locCode = 0;
   displayedColumns1: string[] = ["id", "registrationDate", "action"];
   isTableMain = true;
-   lostRidRoles=[];
-   actionButton =true;
+  lostRidRoles = [];
+  actionButton = true;
+
+  pageSize = 10;
+  pageIndex = 0;
+  totalRecords = 0;
+  paginatedData = [];
 
 
   constructor(
@@ -265,18 +270,18 @@ export class LostRidStatusComponent implements OnInit {
   }
 
   submit() {
-    let count=0;
-    this.lostRidRoles =this.headerService.getRoles().split(',')
-       for(let i=0;i<this.lostRidRoles.length;i++){
-          if(this.lostRidRoles[i].trim() == 'BIOMETRIC READ' || this.lostRidRoles[i].trim()=='DATA READ'){
-              count++
-          } if( count==2){
-            break;
-          }
-       }
-        if(count==2){
-          this.actionButton=false;
-        }
+    let count = 0;
+    this.lostRidRoles = this.headerService.getRoles().split(',')
+    for (let i = 0; i < this.lostRidRoles.length; i++) {
+      if (this.lostRidRoles[i].trim() == 'BIOMETRIC READ' || this.lostRidRoles[i].trim() == 'DATA READ') {
+        count++
+      } if (count == 2) {
+        break;
+      }
+    }
+    if (count == 2) {
+      this.actionButton = false;
+    }
     let self = this;
     let mandatoryFieldName = [];
     let mandatoryFieldLabel = [];
@@ -294,7 +299,7 @@ export class LostRidStatusComponent implements OnInit {
       if (!self.fieldNameList[mandatoryFieldName[i]]) {
         this.showErrorPopup(
           mandatoryFieldLabel[i] +
-            this.popupMessages.genericerror.fieldNameValidation
+          this.popupMessages.genericerror.fieldNameValidation
         );
         break;
       } else if (len === i + 1) {
@@ -307,14 +312,14 @@ export class LostRidStatusComponent implements OnInit {
     let filter = [];
     let name1: string = "";
     for (let value of this.filterColumns) {
-      
-      
+
+
       let count: number = 0;
       if (this.fieldNameList[value.filtername]) {
         if (value.dropdown !== "true" && value.datePicker !== "true") {
           if (
             value.fieldName !== "phone" ||
-            value.fieldName !== "email" 
+            value.fieldName !== "email"
           ) {
             if (count === 0) {
               name1 += this.fieldNameList[value.filtername];
@@ -347,7 +352,7 @@ export class LostRidStatusComponent implements OnInit {
             type: "equals",
             value: this.fieldNameList[value.filtername],
           });
-        } 
+        }
       }
     }
     if (name1) {
@@ -370,7 +375,7 @@ export class LostRidStatusComponent implements OnInit {
     if (this.sortFilter.length == 0) {
       this.sortFilter.push({ sortType: "desc", sortField: "registrationDate" });
     }
-
+    filters.pagination = { pageStart: this.pageIndex * this.pageSize, pageFetch: this.pageSize };
     this.requestModel = new RequestModel(null, null, filters);
     if (filters.filters.length > 0)
       this.dataStroageService
@@ -381,13 +386,12 @@ export class LostRidStatusComponent implements OnInit {
             this.paginatorOptions.pageIndex = 0;
             this.paginatorOptions.pageSize = 0;
             if (response.data.length) {
-              this.dataSource = [...response.data];
-              console.log("dataSource",this.dataSource);
-              
-              this.datas = [...response.data];
-              this.datas.forEach((element, index) => {
-                this.datas[index]["name"] = element.additionalInfo.name;
-              });
+              this.totalRecords = response.totalRecord;
+              this.paginatedData = response.data.map((element) => ({
+                ...element,
+                registrationDate: element.registartionDate,
+                name: element.additionalInfo && element.additionalInfo.name ? element.additionalInfo.name : '',
+              }));
               this.showTable = true;
             } else {
               this.noData = true;
@@ -433,7 +437,7 @@ export class LostRidStatusComponent implements OnInit {
       .subscribe(
         (response: any) => {
           const lostData = response.response.lostRidDataMap;
-          this.openDialog(lostData, this.dataSource, index);
+          this.openDialog(lostData, this.paginatedData, index);
         },
         (error: any) => {
           console.error("Error fetching details", error);
@@ -450,7 +454,11 @@ export class LostRidStatusComponent implements OnInit {
     });
   }
 
-  
+  handlePageEvent(event: PageEvent) {
+    this.pageSize = event.pageSize;
+    this.pageIndex = event.pageIndex;
+    this.getlostridDetails();
+  }
 
   ngOnDestroy() {
     this.subscribed.unsubscribe();
