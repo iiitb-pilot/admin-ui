@@ -86,7 +86,7 @@
     </div>
   </div>
   <ng-container>
-    <mat-card class="mat-elevation-z5" *ngIf="dataSource.length > 0">
+    <mat-card class="mat-elevation-z5" *ngIf="paginatedData.length > 0">
       <!-- <app-table
       *ngIf="datas && displayedColumns && actionButtons"
       [data]="datas"
@@ -129,8 +129,18 @@
 
       <!-- Pagination -->
 
-      <mat-paginator [length]="totalRecords" [pageSize]="pageSize" [pageIndex]="pageIndex"
-        (page)="handlePageEvent($event)"></mat-paginator>
+      <div class="paginator-wrapper">
+    <span style="flex: 1 1 auto;"></span>
+    <span class="paginator-custom-label">Items per page</span>
+    <mat-paginator
+      [length]="totalRecords"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 25, 50]"
+      showFirstLastButtons="true"
+      [pageIndex]="pageIndex"
+      (page)="handlePageEvent($event)">
+    </mat-paginator>
+  </div>
       <!--   <table *ngFor="let data of datas; let i = index">
       <tr>
         <td>{{data.registrationId}}</td>

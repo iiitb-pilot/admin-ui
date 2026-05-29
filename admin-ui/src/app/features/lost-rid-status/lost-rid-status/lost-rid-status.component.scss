@@ -142,66 +142,76 @@ h3 {
     padding-left: 16px !important;
 }
 
-$paginator-accent:        #ff4081;
-$paginator-disabled-bg:   #e0e0e0;
-$paginator-disabled-icon: #9e9e9e;
-$paginator-border:        #e0e0e0;
-$paginator-text:          #444;
-$paginator-btn-size:      28px;
-$paginator-icon-size:     18px;
-
-@mixin nav-btn-state($bg, $icon-fill, $opacity: 1) {
-  background-color: $bg !important;
-  opacity: $opacity !important;
-
-  .mat-paginator-icon {
-    fill: $icon-fill !important;
-  }
+.paginator-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  height: 4.5em;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-top: none;
+  padding: 0 8px;
 }
 
-::ng-deep {
-  .mat-paginator {
-    background: #fff;
-    border-top: 1px solid $paginator-border;
-    padding: 8px 12px;
-    border-radius: 6px;
-  }
+.paginator-custom-label {
+  margin: 0 10px;
+  font-size: 9.5px;
+  color: #3b4141;
+  white-space: nowrap;
+}
 
-  .mat-paginator-navigation-first,
-  .mat-paginator-navigation-previous,
-  .mat-paginator-navigation-next,
-  .mat-paginator-navigation-last {
-    width: $paginator-btn-size !important;
-    height: $paginator-btn-size !important;
-    line-height: $paginator-btn-size !important;
-    min-width: $paginator-btn-size !important;
-    padding: 0 !important;
-    border-radius: 4px !important;
-    margin: 0 2px;
+:host ::ng-deep .paginator-wrapper .mat-paginator-container {
+  min-height: 50px;
+  padding: 0 8px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
 
-    .mat-paginator-icon {
-      width: $paginator-icon-size !important;
-    }
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size-label {
+  display: none;
+}
 
-    &:not([disabled]) {
-      @include nav-btn-state($paginator-accent, white);
-    }
+:host ::ng-deep .paginator-wrapper .mat-paginator-range-label {
+  margin: 0 20px;
+  font-size: 10px !important;
+  color: #3b4141;
+  white-space: nowrap;
+}
 
-    &[disabled] {
-      @include nav-btn-state($paginator-disabled-bg, $paginator-disabled-icon, 0.5);
-    }
-  }
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size {
+  align-items: center;
+}
 
-  .mat-paginator-range-label {
-    margin: 0 16px;
-    font-size: 14px;
-    font-weight: 500;
-    color: $paginator-text;
-    min-width: 95px;
-    text-align: center;
-  }
+:host ::ng-deep .paginator-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {
+  border: 0.9px solid #b5b7b7;
+  height: 25px;
+  padding: 0.3em 0;
+}
 
-  .mat-paginator-page-size-select {
-    margin: 0 8px;
-  }
+:host ::ng-deep .paginator-wrapper .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: transparent;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size-select {
+  width: 50px !important;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-select-value {
+  font-size: 9.5px !important;
+  color: #3b4141;
+  padding-left: 10px;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-icon-button {
+  height: 25px !important;
+  width: 28px !important;
+  border-radius: 0 !important;
+  line-height: 25px;
+  border: 0.9px solid #b5b7b7 !important;
+  padding: 0 !important;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-icon {
+  width: 18px;
+  fill: #3b4141;
 }
