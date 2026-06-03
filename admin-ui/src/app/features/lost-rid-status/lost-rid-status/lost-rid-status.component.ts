@@ -372,11 +372,24 @@ export class LostRidStatusComponent implements OnInit {
       this.filtersApplied = true;
     }
     this.sortFilter = filters.sort;
+
     if (this.sortFilter.length == 0) {
-      this.sortFilter.push({ sortType: "desc", sortField: "registrationDate" });
+      this.sortFilter.push({
+        sortType: "desc",
+        sortField: "registrationDate"
+      });
     }
-    filters.pagination = { pageStart: this.pageIndex * this.pageSize, pageFetch: this.pageSize };
-    this.requestModel = new RequestModel(null, null, filters);
+
+    filters.pagination = {
+      pageStart: this.pageIndex,
+      pageFetch: this.pageSize
+    };
+
+    this.requestModel = new RequestModel(
+      null,
+      null,
+      filters
+    );
     if (filters.filters.length > 0)
       this.dataStroageService
         .getlostridDetails(this.requestModel)
