@@ -192,7 +192,7 @@ export class DataStorageService {
 
   getlostridDetails(request: RequestModel): Observable<any> {
     delete request['request']['languageCode'];
-    delete request['request']['pagination'];
+    // delete request['request']['pagination'];
     //request['request']['filters'].push({"columnName": "registrationDate", "fromValue": "2021-11-01", "toValue": "2021-11-17", "type": "between", "value": ""});
     //request['request']['filters'].push({"columnName": "name", "type": "equals", "value": "MOSIP-17076"});
     return this.http.post(this.BASE_URL + appConstants.URL["lost-rid-status"], request);
