@@ -141,3 +141,77 @@ h3 {
 .padding{
     padding-left: 16px !important;
 }
+
+.paginator-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  height: 4.5em;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-top: none;
+  padding: 0 8px;
+}
+
+.paginator-custom-label {
+  margin: 0 10px;
+  font-size: 9.5px;
+  color: #3b4141;
+  white-space: nowrap;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-container {
+  min-height: 50px;
+  padding: 0 8px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size-label {
+  display: none;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-range-label {
+  margin: 0 20px;
+  font-size: 10px !important;
+  color: #3b4141;
+  white-space: nowrap;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size {
+  align-items: center;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-form-field-appearance-legacy .mat-form-field-infix {
+  border: 0.9px solid #b5b7b7;
+  height: 25px;
+  padding: 0.3em 0;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: transparent;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-page-size-select {
+  width: 50px !important;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-select-value {
+  font-size: 9.5px !important;
+  color: #3b4141;
+  padding-left: 10px;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-icon-button {
+  height: 25px !important;
+  width: 28px !important;
+  border-radius: 0 !important;
+  line-height: 25px;
+  border: 0.9px solid #b5b7b7 !important;
+  padding: 0 !important;
+}
+
+:host ::ng-deep .paginator-wrapper .mat-paginator-icon {
+  width: 18px;
+  fill: #3b4141;
+}
