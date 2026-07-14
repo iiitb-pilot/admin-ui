@@ -1,0 +1,49 @@
+.dialog-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.profile-photo {
+  width: 7rem;
+  height: 9rem;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+
+.dialog-info {
+  flex-grow: 1;
+}
+
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between; /* Space the buttons evenly */
+  width: 100%;
+  margin-bottom: 10px; /* Add spacing between button rows */
+}
+
+.close-button-row {
+  display: flex;
+  justify-content: flex-end; /* Align the close button to the end */
+  width: 100%;
+  background-color: #f0f0f0; /* Gray background color */
+}
+
+/* Optionally adjust the color of the close button */
+.mat-button.mat-primary {
+  background-color: #4f4f4f; /* Deep gray color */
+  color: white;
+}
+.dobPadding {
+  padding-top: 3rem;
+}
+.mat-con {
+  overflow: hidden !important;
+}

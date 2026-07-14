@@ -198,6 +198,12 @@ export class DataStorageService {
     return this.http.post(this.BASE_URL + appConstants.URL["lost-rid-status"], request);
   }
 
+  getLostRidDetailsPhoto(rid:any): Observable<any> {  
+    return this.http.get(
+      this.BASE_URL+'admin/lostRid/details/'+rid
+    );
+  }
+
   deleteUser(userId: any, actualData: any): Observable<any> {
     let url = this.router.url.split('/')[3];
     let urlmapping = {"users":"usercentermapping", "zoneuser":"zoneuser"};

@@ -5,6 +5,8 @@ import { LostRidStatusRoutingModule } from './lost-rid-status-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/shared/material.module';
+import { ProfileDialogComponent } from './lost-rid-profile/profile-dialog/profile-dialog.component';
+import { ConfirmDialogComponent } from './lost-rid-profile/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   imports: [
@@ -14,6 +16,8 @@ import { MaterialModule } from 'src/app/shared/material.module';
     FormsModule,
     MaterialModule
   ],
-  declarations: [LostRidStatusComponent]
+  declarations: [LostRidStatusComponent, ProfileDialogComponent,  ConfirmDialogComponent],
+  entryComponents: [ProfileDialogComponent,ConfirmDialogComponent]
 })
+
 export class LostRidStatusModule { }

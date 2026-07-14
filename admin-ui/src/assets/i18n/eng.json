@@ -698,7 +698,15 @@
         "subtitleenrollment":"Enrollment Details",
         "subtitlelocation":"Location",
         "searchbtn":"Search",
-        "clearbtn":"Clear"
+        "clearbtn":"Clear",
+        "applicationId":"Registration Id",
+        "name":"Full Name",
+        "enrolmentDate":"Enrollment Date",
+        "dateOfBirth":"Date of Birth",
+        "applicantPhoto":"Applicant Photo",
+        "registrationDate":"Registration Date",
+        "action":"Action"
+
     },
     "generatecsr": {
         "title": "Generate CSR",
