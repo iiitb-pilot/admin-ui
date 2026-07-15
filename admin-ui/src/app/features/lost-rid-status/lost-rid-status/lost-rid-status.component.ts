@@ -439,11 +439,25 @@ export class LostRidStatusComponent implements OnInit {
       .getLostRidDetailsPhoto(element.registrationId)
       .subscribe(
         (response: any) => {
-          const lostData = response.response.lostRidDataMap;
-          this.openDialog(lostData, this.paginatedData, index);
+
+          if (
+            response &&
+            response.response &&
+            response.response.lostRidDataMap
+          ) {
+            const lostData = response.response.lostRidDataMap;
+            this.openDialog(lostData, this.paginatedData, index);
+          } else {
+            let message = "Unable to find the lost rid data";
+            if (response && response.errors && response.errors.length) {
+              message = response.errors[0].message;
+            }
+            this.showErrorPopup(message);
+          }
         },
         (error: any) => {
-          console.error("Error fetching details", error);
+          console.error(error);
+          this.showErrorPopup("Unable to retrieve Lost RID details.");
         }
       );
   }
