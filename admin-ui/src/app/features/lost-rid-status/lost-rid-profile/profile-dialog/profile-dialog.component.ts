@@ -13,11 +13,9 @@ export class ProfileDialogComponent {
     public dialogRef: MatDialogRef<ProfileDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
-    console.log("dataSource ---------->>> ", data);
     if (data.lostData.name) {
       this.name += data.lostData.name;
     }
-    console.log("name ------->>> ", this.name);
   }
 
   onPrint(): void {
