@@ -1,10 +1,6 @@
 name: admin-ui push trigger build upon a push
 
 on:
-  release:
-    types: [published]
-  pull_request:
-    types: [opened, reopened, synchronize]
   workflow_dispatch:
     inputs:
       message:
@@ -15,11 +11,7 @@ on:
   push:
     branches:
       - '!release-branch'
-      - develop
-      - release-*
-      - '!master'
-      - 1.*
-      - MOSIP*
+      - *-pilot-*
       - dst-*
       - mec-*
 
