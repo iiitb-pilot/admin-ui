@@ -61,25 +61,34 @@ export class PacketStatusComponent implements OnInit {
       this.error = true;
     } else {
       this.error = false;
-      this.dataStorageService.getPacketStatus(this.id, this.headerService.getUserPreferredLanguage()).subscribe(response => {
-        if (response['errors']) {
-          this.error = true;
-          this.statusCheck = '';
-          this.errorMessage = this.serverMessage[response['errors'][0].errorCode];
-       } else{          
-          this.data = response['response']['packetStatusUpdateList'];
-          for (let i = 0 ; i < this.data.length; i++) {
-            if (this.data[i].statusCode.includes('FAILED')) {
-              this.statusCheck = this.messages.statuscheckFailed;
-              break;
-            } else {
-              this.statusCheck = this.messages.statuscheckCompleted;
-            }
+      this.dataStorageService
+        .getPacketStatus(
+          this.id,
+          this.headerService.getUserPreferredLanguage()
+        )
+        .subscribe(response => {
+          if (response['errors']) {
+            this.error = true;
+            this.statusCheck = '';
+            this.errorMessage =
+              this.serverMessage[response['errors'][0].errorCode];
+          } else {
+            this.data = response['response']['packetStatusUpdateList'];
             this.error = false;
             this.showDetails = true;
+            if (this.data && this.data.length > 0) {
+              const latestStatus =
+                this.data[this.data.length - 1].statusCode;
+              if (latestStatus.includes('FAILED')) {
+                this.statusCheck =
+                  this.messages.statuscheckFailed;
+              } else {
+                this.statusCheck =
+                  this.messages.statuscheckCompleted;
+              }
+            }
           }
-        }
-      });
+        });
     }
   }
 
