@@ -54,131 +54,133 @@ export class PacketStatusComponent implements OnInit {
     this.auditService.audit(5, 'ADM-045');
   }
 
-  search() {
-    this.data = null;
-    this.errorMessage = '';
+search() {
+  this.data = null;
+  this.errorMessage = '';
 
-    console.log('========== PACKET STATUS SEARCH START ==========');
-    console.log('Registration ID:', this.id);
+  console.log('========== PACKET STATUS SEARCH START ==========');
+  console.log('Registration ID:', this.id);
 
-    if (this.id.length == 0) {
+  if (this.id.length == 0) {
 
-      this.error = true;
+    this.error = true;
 
-      console.log('ERROR: Registration ID is empty');
+    console.log('ERROR: Registration ID is empty');
 
-    } else {
+  } else {
 
-      this.error = false;
+    this.error = false;
 
-      console.log('Calling getPacketStatus API...');
+    console.log('Calling getPacketStatus API...');
 
-      this.dataStorageService
-        .getPacketStatus(
-          this.id,
-          this.headerService.getUserPreferredLanguage()
-        )
-        .subscribe(response => {
+    this.dataStorageService
+      .getPacketStatus(
+        this.id,
+        this.headerService.getUserPreferredLanguage()
+      )
+      .subscribe(response => {
 
-          console.log('========== PACKET STATUS API RESPONSE ==========');
-          console.log('Full API Response:', response);
+        console.log('========== PACKET STATUS API RESPONSE ==========');
+        console.log('Full API Response:', response);
 
-          if (response['errors']) {
+        if (response['errors']) {
 
-            console.log('API returned errors:', response['errors']);
+          console.log('API returned errors:', response['errors']);
 
-            this.error = true;
-            this.statusCheck = '';
-            this.errorMessage =
-              this.serverMessage[response['errors'][0].errorCode];
+          this.error = true;
+          this.statusCheck = '';
+          this.errorMessage =
+            this.serverMessage[response['errors'][0].errorCode];
 
-            console.log('Error Message:', this.errorMessage);
+          console.log('Error Message:', this.errorMessage);
 
-          } else {
+        } else {
 
-            this.data =
-              response['response']['packetStatusUpdateList'];
+          this.data =
+            response['response']['packetStatusUpdateList'];
 
-            console.log('========== PACKET STATUS LIST ==========');
-            console.log('Total Records:', this.data?.length);
-            console.log('Full packetStatusUpdateList:', this.data);
+          console.log('========== PACKET STATUS LIST ==========');
+          console.log('Total Records:', this.data.length);
+          console.log('Full packetStatusUpdateList:', this.data);
 
-            this.error = false;
-            this.showDetails = true;
+          this.error = false;
+          this.showDetails = true;
 
-            if (this.data && this.data.length > 0) {
+          if (this.data && this.data.length > 0) {
 
-              console.log('========== ALL STATUS RECORDS ==========');
+            console.log('========== ALL STATUS RECORDS ==========');
 
-              this.data.forEach((item, index) => {
+            this.data.forEach((item, index) => {
 
-                console.log(
-                  'INDEX:',
-                  index,
-                  '| STATUS:',
-                  item.statusCode,
-                  '| SUB STATUS:',
-                  item.subStatusCode,
-                  '| TRANSACTION:',
-                  item.transactionTypeCode,
-                  '| DATE:',
-                  item.createdDateTimes
-                );
-
-              });
-
-              console.log('========== FIRST RECORD ==========');
-              console.log('First Record:', this.data[0]);
-
-              console.log('========== LAST RECORD ==========');
               console.log(
-                'Last Record:',
-                this.data[this.data.length - 1]
+                'INDEX:',
+                index,
+                '| STATUS:',
+                item.statusCode,
+                '| SUB STATUS:',
+                item.subStatusCode,
+                '| TRANSACTION:',
+                item.transactionTypeCode,
+                '| DATE:',
+                item.createdDateTimes
               );
 
-              const latestStatus =
-                this.data[this.data.length - 1].statusCode;
+            });
 
-              console.log('========== LATEST STATUS ==========');
-              console.log('Latest Status:', latestStatus);
+            console.log('========== FIRST RECORD ==========');
+            console.log('First Record:', this.data[0]);
 
-              if (latestStatus.includes('FAILED')) {
+            console.log('========== LAST RECORD ==========');
+            console.log(
+              'Last Record:',
+              this.data[this.data.length - 1]
+            );
 
-                this.statusCheck =
-                  this.messages.statuscheckFailed;
+            const latestStatus =
+              this.data[this.data.length - 1].statusCode;
 
-                console.log(
-                  'FINAL STATUS CHECK: FAILED'
-                );
+            console.log('========== LATEST STATUS ==========');
+            console.log('Latest Status:', latestStatus);
 
-              } else {
+            if (latestStatus.includes('FAILED')) {
 
-                this.statusCheck =
-                  this.messages.statuscheckCompleted;
-
-                console.log(
-                  'FINAL STATUS CHECK: COMPLETED'
-                );
-              }
+              this.statusCheck =
+                this.messages.statuscheckFailed;
 
               console.log(
-                'StatusCheck displayed in UI:',
-                this.statusCheck
+                'FINAL STATUS CHECK: FAILED'
               );
 
             } else {
 
-              console.log(
-                'WARNING: packetStatusUpdateList is empty'
-              );
+              this.statusCheck =
+                this.messages.statuscheckCompleted;
 
+              console.log(
+                'FINAL STATUS CHECK: COMPLETED'
+              );
             }
 
-            console.log('========== PACKET STATUS SEARCH END ==========');
+            console.log(
+              'StatusCheck displayed in UI:',
+              this.statusCheck
+            );
+
+          } else {
+
+            console.log(
+              'WARNING: packetStatusUpdateList is empty'
+            );
+
           }
-        });
-    }
+
+          console.log(
+            '========== PACKET STATUS SEARCH END =========='
+          );
+        }
+      });
   }
+}
 
 viewMore() {
     this.showTimeline = !this.showTimeline;
