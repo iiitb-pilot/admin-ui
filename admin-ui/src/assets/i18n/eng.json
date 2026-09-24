@@ -1399,6 +1399,9 @@
         "RPR-UIN-FAILED-008": "UIN Not Found for the Matched RID",
         "RPR-SEN-SUCCESS-001": "Notification received to securezone",
         "RPR-RGS-034" : "searching between date should be less then 30 days",
-        "KER-MSD-394" : "Your zone mapping missing. Please contact the administrator."
+        "KER-MSD-394" : "Your zone mapping missing. Please contact the administrator.",
+        "RPR-PKC-SUCCESS-001": "Packet Classification is Successful",
+        "RPR-CMD-SUCCESS-001": "CMD Validation is Successful",
+        "RPR-OVM-SUCCESS-001": "OPERATOR Validation is Successful"
     }
 }
