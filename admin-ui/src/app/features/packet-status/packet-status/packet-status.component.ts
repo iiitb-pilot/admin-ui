@@ -86,9 +86,14 @@ export class PacketStatusComponent implements OnInit {
               ) {
                 this.statusCheck =
                   this.messages.statuscheckCompleted;
-              } else {
+              } else if (
+                latestRecord.statusCode.includes('FAILED')
+              ) {
                 this.statusCheck =
                   this.messages.statuscheckFailed;
+              } else {
+                this.statusCheck =
+                  this.messages.statuscheckInprogress;
               }
             }
           }
