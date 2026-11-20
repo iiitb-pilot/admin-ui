@@ -1231,6 +1231,7 @@ export class EditComponent {
       if (x.length === 0) {
         existingHolidays.push(holidayObj);
         this.commonForm.controls.exceptionalHolidays.setValue(existingHolidays);
+        this.commonForm.controls.exceptionalHolidays.markAsDirty();
       }
       this.holidayDate = undefined;
     }
@@ -1241,6 +1242,7 @@ export class EditComponent {
       let existingHolidays = this.commonForm.controls.exceptionalHolidays.value;
       existingHolidays.splice(i, 1);
       this.commonForm.controls.exceptionalHolidays.setValue(existingHolidays);
+      this.commonForm.controls.exceptionalHolidays.markAsDirty();
     }
   }
 
